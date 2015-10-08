@@ -91,7 +91,7 @@
       for (var i = 0; i < vm.alarmsSets.length; i++) {
         if (vm.alarmsSets[i].active) {
           if (vm.alarmsSets[i].time === val) {
-            console.log(vm.alarmsSets[i].name);
+            // console.log(vm.alarmsSets[i].name);
             vm.alarmsSets[i].ring++;
             vm.bell = vm.alarmsSets[i].active;
             setTimeout(function() { 
