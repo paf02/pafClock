@@ -53,7 +53,8 @@ To see this project running please run:
 I used a gulp task to deploy on github pages.
 
     $ gulp deploy
-
     
-Thanks.
+To check this app use this [*link*](http://paf02.github.io/pafClock)
+    
 
+Thanks.
