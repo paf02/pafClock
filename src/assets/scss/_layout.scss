@@ -19,7 +19,16 @@ p {
   padding: 0.2em 0;
 }
 
-
 .ajust-nav {
 	padding-top: 50px;
+}
+
+.bell {
+	position: absolute;
+	top: 50px;
+	right: 0;
+
+	> img {
+		max-width: 65px;
+	}
 }

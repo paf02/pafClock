@@ -22,6 +22,7 @@
     var vm = this;
     vm.panelActive = false;
     vm.alarmsSets = null;
+    vm.bell = false;
     vm.formatChoose = {
       template: '',
       format24: false
@@ -92,10 +93,18 @@
           if (vm.alarmsSets[i].time === val) {
             console.log(vm.alarmsSets[i].name);
             vm.alarmsSets[i].ring++;
-            setTimeout( function() { beep.play(); }, 1000 * vm.alarmsSets[i].ring );
+            vm.bell = vm.alarmsSets[i].active;
+            setTimeout(function() { 
+              beep.play(); 
+            }, 1000 * vm.alarmsSets[i].ring );
+
+            setTimeout(function() { 
+              vm.bell = false;
+            }, 6000);
+
             if (vm.alarmsSets[i].ring === 3) {
               vm.alarmsSets[i].ring = 0;
-              vm.alarmsSets[i].active = 0;
+              vm.alarmsSets[i].active = false;
               break;
             }
           }
