@@ -1,0 +1,77 @@
+$extra-size: 80px;
+$main-size: 240px;
+
+tick-tock-alarms {
+	position: absolute;
+	top: 0;
+	left: -$main-size;
+	width: $main-size;
+	height: 100%;
+	background-color: #eeeeee;
+	padding: 50px 10px 10px;
+	transition: 0.5s left ease;
+
+	&:before {
+		content: ' ';
+		position: absolute;
+    background-color: #eeeeee;
+    width: $extra-size;
+    height: 70px;
+    right: -$extra-size;
+    top: 50px;
+	}
+
+	&.show {
+		left: 0;
+	}
+
+	.panel-container {
+		list-style: none;
+		padding: 0;
+		overflow-x: auto;
+    height: 90%;
+
+		.panel {
+			margin-top: 10px;
+			margin-bottom: 0;
+
+			.panel-body {
+				> * {
+					margin-top: 10px;
+
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.input-group-addon {
+    min-width: 65px;
+	}
+
+	.btn {
+		&.btn-behaivor {
+			min-width: 48%;
+		}
+
+		&.btn-days {
+			min-width: 37px;
+		}
+
+		&.add-alarm {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+			display: block;
+			margin: 20px 0 10px;
+		}
+
+		&.handle-alarm {
+			position: absolute;
+			right: -70px;
+    	top: 70px;
+		}
+	}
+}

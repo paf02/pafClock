@@ -1,0 +1,313 @@
+#wrapper {
+  margin: 30px auto;
+  text-align: center;
+  width: 320px;
+  height: 445px;
+
+  .clock {
+	  position: relative;
+	  height: 445px;
+	  width: 445px;
+	  margin-left: -65px;
+	}
+
+	#centerPoint {
+    background-color: black;
+    border-radius: 12px;
+    height: 24px;
+    left: 210px;
+    position: absolute;
+    top: 208px;
+    width: 24px;
+	}
+
+	.numbers {
+    display: block;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 32px;
+    position: absolute;
+	}
+	#numberone {
+    right: 150px;
+    top: 85px;
+	}
+	#numbertwo {
+    right: 100px;
+    top: 135px;
+	}
+	#numberthree {
+    right: 85px;
+    top: 200px;
+	}
+	#numberfour {
+    right: 100px;
+    top: 265px;
+	}
+	#numberfive {
+    right: 150px;
+    top: 310px;
+	}
+	#numbersix {
+    right: 215px;
+    top: 330px;
+	}
+	#numbereleven {
+    left: 150px;
+    top: 85px;
+	}
+	#numberten {
+    left: 100px;
+    top: 135px;
+	}
+	#numbereight {
+    left: 100px;
+    top: 265px;
+	}
+	#numberseven {
+    left: 150px;
+    top: 310px;
+	}
+	#numbernine {
+    left: 85px;
+    top: 200px;
+	}
+	#numbertwelve {
+    right: 208px;
+    top: 70px;
+	}
+	.minutes {
+    background: #8e8e8e none repeat scroll 0 0;
+    height: 15px;
+    left: 220px;
+    position: absolute;
+    top: 53px;
+    transform-origin: 50% 170px 0;
+    width: 3px;
+	}
+	.fiveminutes {
+    background: #000 none repeat scroll 0 0;
+    height: 25px;
+    left: 220px;
+    position: absolute;
+    top: 53px;
+    transform-origin: 50% 170px 0;
+    width: 3px;
+	}
+	#one {
+    transform: rotate(6deg);
+	}
+	#two {
+    transform: rotate(12deg);
+	}
+	#three {
+    transform: rotate(18deg);
+	}
+	#four {
+    transform: rotate(24deg);
+	}
+	#five {
+    transform: rotate(30deg);
+	}
+	#six {
+    transform: rotate(36deg);
+	}
+	#seven {
+    transform: rotate(42deg);
+	}
+	#eight {
+    transform: rotate(48deg);
+	}
+	#nine {
+    transform: rotate(54deg);
+	}
+	#ten {
+    transform: rotate(60deg);
+	}
+	#eleven {
+    transform: rotate(66deg);
+	}
+	#twelve {
+    transform: rotate(72deg);
+	}
+	#thirteen {
+    transform: rotate(78deg);
+	}
+	#fourteen {
+    transform: rotate(84deg);
+	}
+	#fifteen {
+    transform: rotate(90deg);
+	}
+	#sixteen {
+    transform: rotate(96deg);
+	}
+	#seventeen {
+    transform: rotate(102deg);
+	}
+	#eighteen {
+  	transform: rotate(108deg);
+	}
+	#nineteen {
+    transform: rotate(114deg);
+	}
+	#twenty {
+    transform: rotate(120deg);
+	}
+	#twentyone {
+    transform: rotate(126deg);
+	}
+	#twentytwo {
+    transform: rotate(132deg);
+	}
+	#twentythree {
+    transform: rotate(138deg);
+	}
+	#twentyfour {
+    transform: rotate(144deg);
+	}
+	#twentyfive {
+    transform: rotate(150deg);
+	}
+	#twentysix {
+    transform: rotate(156deg);
+	}
+	#twentyseven {
+    transform: rotate(162deg);
+	}
+	#twentyeight {
+    transform: rotate(168deg);
+	}
+	#twentynine {
+    transform: rotate(174deg);
+	}
+	#thirty {
+    transform: rotate(180deg);
+	}
+	#thirtyone {
+    transform: rotate(186deg);
+	}
+	#thirtytwo {
+    transform: rotate(192deg);
+	}
+	#thirtythree {
+    transform: rotate(198deg);
+	}
+	#thirtyfour {
+    transform: rotate(204deg);
+	}
+	#thirtyfive {
+    transform: rotate(210deg);
+	}
+	#thirtysix {
+    transform: rotate(216deg);
+	}
+	#thirtyseven {
+    transform: rotate(222deg);
+	}
+	#thirtyeight {
+    transform: rotate(228deg);
+	}
+	#thirtynine {
+    transform: rotate(234deg);
+	}
+	#fourty {
+    transform: rotate(240deg);
+	}
+	#fourtyone {
+    transform: rotate(246deg);
+	}
+	#fourtytwo {
+    transform: rotate(252deg);
+	}
+	#fourtythree {
+    transform: rotate(258deg);
+	}
+	#fourtyfour {
+    transform: rotate(264deg);
+	}
+	#fourtyfive {
+    transform: rotate(270deg);
+	}
+	#fourtysix {
+    transform: rotate(276deg);
+	}
+	#fourtyseven {
+    transform: rotate(282deg);
+	}
+	#fourtyeight {
+    transform: rotate(288deg);
+	}
+	#fourtynine {
+    transform: rotate(294deg);
+	}
+	#fifty {
+  	transform: rotate(300deg);
+	}
+	#fiftyone {
+	  transform: rotate(306deg);
+	}
+	#fiftytwo {
+    transform: rotate(312deg);
+	}
+	#fiftythree {
+    transform: rotate(318deg);
+	}
+	#fiftyfour {
+    transform: rotate(324deg);
+	}
+	#fiftyfive {
+    transform: rotate(330deg);
+	}
+	#fiftysix {
+    transform: rotate(336deg);
+	}
+	#fiftyseven {
+    transform: rotate(342deg);
+	}
+	#fiftyeight {
+    transform: rotate(348deg);
+	}
+	#fiftynine {
+    transform: rotate(354deg);
+	}
+	#sixty {
+    transform: rotate(0deg);
+	}
+	#minhand {
+    background: black none repeat scroll 0 0;
+    border-radius: 7px;
+    height: 160px;
+    left: 218px;
+    position: absolute;
+    top: 90px;
+    transform-origin: 50% 131px 0;
+    width: 8px;
+	}
+	#hourhand {
+    background: #000 none repeat scroll 0 0;
+    border-radius: 7px;
+    height: 130px;
+    left: 218px;
+    position: absolute;
+    top: 120px;
+    transform-origin: 50% 100px 0;
+    width: 8px;
+	}
+	#sechand {
+    background: red none repeat scroll 0 0;
+    border-radius: 7px;
+    height: 160px;
+    left: 220px;
+    position: absolute;
+    top: 90px;
+    transform-origin: 50% 131px 0;
+    width: 4px;
+	}
+
+	.format-analog {
+		position: absolute;
+		top: 140px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+}

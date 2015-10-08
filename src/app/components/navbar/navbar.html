@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-click="vm.toggleMenu()" >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Clock Config</a>
+    </div>
+
+    <div class="collapse navbar-collapse" collapse="vm.navCollapsed">
+      <ul class="nav navbar-nav">
+        <!-- <li><a ng-click="vm.anaClo()">Analog Clock</a></li>
+        <li><a ng-click="vm.digClo()">Digital Clock</a></li> -->
+        <li><a ui-sref="analogClock">Analog Clock</a></li>
+        <li><a ui-sref="digitalClock">Digital Clock</a></li>
+        <li ng-click="vm.toggleClock()">
+          <div class="choose">
+            <span class="typeSelector"></span>
+            <span class="selector" ng-class="{'right': vm.isActive}"></span>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+

@@ -1,0 +1,102 @@
+<button type="button" class="btn btn-default handle-alarm" ng-click="vm.showAlarmPanel()">Alarm</button>
+<button type="button" class="btn btn-default add-alarm" ng-click="vm.addAlarm()">Add new alarm</button>
+
+
+<ul class="panel-container" ng-init="vm.saico = true">
+  <li class="panel" 
+      ng-repeat="alarmActive in vm.alarmsSets"
+      ng-class="alarmActive.active ? 'panel-success' : 'panel-info'">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{alarmActive.name}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="input-group">
+        <span class="input-group-addon">Hrs</span>
+        <input class="form-control" type="number" min="0" max="23" step="0" value="0" ng-model="alarmActive.h" ng-disabled="alarmActive.active">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon">Mins</span>
+        <input class="form-control" type="number" min="0" max="59" step="0" value="0" ng-model="alarmActive.m" ng-disabled="alarmActive.active">
+      </div>
+
+      <input type="text" 
+             class="form-control name" 
+             placeholder="name" 
+             ng-model="alarmActive.name" 
+             ng-init="alarmActive.name = 'default_' + $index"
+             ng-disabled="alarmActive.active" 
+             required>
+
+      <!-- <div role="group" class="btn-group">
+        <button class="btn btn-days" 
+                type="button"
+                ng-disabled="alarmActive.active"
+                ng-click="vm.activeDate('m', alarmActive)" 
+                ng-class="alarmActive.repeat['m'] ? 'btn-success' : 'btn-default'">M
+        </button>
+        <button class="btn btn-days" 
+                type="button" 
+                ng-disabled="alarmActive.active"
+                ng-click="vm.activeDate('t', alarmActive)"
+                ng-class="alarmActive.repeat['t'] ? 'btn-success' : 'btn-default'">T
+        </button>
+        <button class="btn btn-days" 
+                type="button" 
+                ng-disabled="alarmActive.active"
+                ng-click="vm.activeDate('w', alarmActive)"
+                ng-class="alarmActive.repeat['w'] ? 'btn-success' : 'btn-default'">W
+        </button>
+        <button class="btn btn-days" 
+                type="button" 
+                ng-disabled="alarmActive.active"
+                ng-click="vm.activeDate('r', alarmActive)"
+                ng-class="alarmActive.repeat['r'] ? 'btn-success' : 'btn-default'">R
+        </button>
+        <button class="btn btn-days" 
+                type="button" 
+                ng-disabled="alarmActive.active"
+                ng-click="vm.activeDate('f', alarmActive)"
+                ng-class="alarmActive.repeat['f'] ? 'btn-success' : 'btn-default'">F
+        </button>
+        <button class="btn btn-days" 
+                type="button" 
+                ng-disabled="alarmActive.active"
+                ng-click="vm.activeDate('s', alarmActive)"
+                ng-class="alarmActive.repeat['s'] ? 'btn-success' : 'btn-default'">S
+        </button>
+        <button class="btn btn-days" 
+                type="button" 
+                ng-disabled="alarmActive.active"
+                ng-click="vm.activeDate('u', alarmActive)"
+                ng-class="alarmActive.repeat['u'] ? 'btn-success' : 'btn-default'">U
+        </button>
+      </div> -->
+
+      
+      <button type="button" 
+              class="btn btn-behaivor " 
+              ng-class="alarmActive.active ? 'btn-info' : 'btn-success'"
+              ng-click="vm.activeAlarm(alarmActive)">
+              <span ng-hide="alarmActive.active">Activate</span>
+              <span ng-show="alarmActive.active">Deactivate</span>
+
+      </button>
+
+      <button type="button" 
+              class="btn btn-behaivor btn-danger" 
+              ng-click="vm.deleteAlarm(alarmActive)"
+              ng-if="vm.alarmsSets.length > 1">Delete</button>
+    </div>
+  </li>
+
+
+<!--   <li class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+      Panel content
+    </div>
+  </li> -->
+</ul>
